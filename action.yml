@@ -3,9 +3,9 @@ description: 'Upload your addon to Pale Moon'
 author: 'rafaelgssa'
 inputs:
   slug:
-    description: 'Your addons slug as defined by Pale Moon'
+    description: 'Your addon\'s slug as defined by Pale Moon'
   xpi:
-    description: 'Path to your addons .xpi file'
+    description: 'Path to your addon\'s .xpi file'
   username:
     description: 'Your username on addons.palemoon.org'
   password:
