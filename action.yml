@@ -1,5 +1,7 @@
 name: 'Pale Moon Addon Action'
 description: 'Upload your addon to Pale Moon'
+icon: 'play'
+color: 'blue'
 author: 'rafaelgssa'
 inputs:
   slug:
