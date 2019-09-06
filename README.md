@@ -1,9 +1,21 @@
-# JavaScript Action Template
+# Pale Moon Addon Action
 
-This template offers an easy way to get started writing a JavaScript action with TypeScript compile time support, unit testing with Jest and using the GitHub Actions Toolkit.
+This action will publish your addon to the Pale Moon Addon store.
 
-## Getting Started
+## Usage
 
-See the walkthrough located [here](https://github.com/actions/toolkit/blob/master/docs/javascript-action.md).
+See [action.yml](action.yml)
 
-In addition to walking your through how to create an action, it also provides strategies for versioning, releasing and referencing your actions.
+```yaml
+steps:
+  - uses: rafaelgssa/palemoon-addon@v1
+    with:
+      slug: my-addon-slug
+      xpi: build/my-addon.xpi
+      username: ${{ secrets.PALEMOON_USERNAME }}
+      password: ${{ secrets.PALEMOON_PASSWORD }}
+```
+
+## License
+
+The scripts and documentation in this project are released under the [MIT License](LICENSE)
