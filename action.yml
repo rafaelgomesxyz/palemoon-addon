@@ -1,10 +1,15 @@
-name: 'Node 12 Template Action'
-description: 'Get started with Node actions'
-author: 'GitHub'
+name: 'Pale Moon Addon Action'
+description: 'Upload your addon to Pale Moon'
+author: 'rafaelgssa'
 inputs:
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  slug:
+    description: 'Your addons slug as defined by Pale Moon'
+  xpi:
+    description: 'Path to your addons .xpi file'
+  username:
+    description: 'Your username on addons.palemoon.org'
+  password:
+    description: 'Your password on addons.palemoon.org'
 runs:
   using: 'node12'
   main: 'lib/main.js'
